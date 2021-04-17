@@ -598,35 +598,36 @@ video{
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
     position: relative;
     opacity: 1;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: left;
     background-repeat: no-repeat;
-    background-size:cover;
-  
   }
   .bgimg-1 {
     background-image: url("../img/index-bgimg-edited.png");
-    min-height: 120vw;
+    background-size:cover;
   }
   .bgimg-2 {
     background-image: url("../img/work-xbank/images-01.png");
-    min-height: 100vw;
+    background-size:cover;
+    height: 100vw;
   }
   
   .bgimg-3 {
     background-image: url("../img/work-chessnet/images-01.png");
-    min-height: 100vw;
+    background-size:cover;    
+    height: 100vw;  
   }
   
   .bgimg-4 {
     background-image: url("../img/work-taste/cover.png");
-    min-height: 90vw;
+    background-size:cover;
+    height: 100vw;
   }
   
   .bgimg-5 {
     background-image: url("../img/work-pet/images-01.png");
-    min-height: 70vw;
-    background-size: 300%;
+    background-size:cover;
+    height: 100vw;
   }
   .hi{
     font-weight: bold;
@@ -894,6 +895,43 @@ video{
   #tablet .detail{
     padding: 0 10vw;
   }
+  /* index parallex */
+  #tablet{
+    position: relative;
+  }
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("../img/index-bgimg-edited.png");
+    min-height: 120vw;
+  }
+  .bgimg-2 {
+    background-image: url("../img/work-xbank/images-01.png");
+    min-height: 100vw;
+  }
+  
+  .bgimg-3 {
+    background-image: url("../img/work-chessnet/images-01.png");
+    min-height: 100vw;
+  }
+  
+  .bgimg-4 {
+    background-image: url("../img/work-taste/cover.png");
+    min-height: 90vw;
+  }
+  
+  .bgimg-5 {
+    background-image: url("../img/work-pet/images-01.png");
+    min-height: 70vw;
+  }
+
   .detail-img{
     width: 80vw;
     height: auto;
@@ -1016,8 +1054,8 @@ video{
   }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 768px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
     background-attachment: scroll;
   }
 }
@@ -1045,16 +1083,3 @@ video{
     transform:none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
