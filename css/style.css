@@ -1009,11 +1009,39 @@ video{
     /* padding-left: 4vw; */
     flex-wrap: nowrap;
   }
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
+}
+
+/* reduced-motion */
+@media all and (prefers-reduced-motion:reduce){
+  @keyframes zoom{
+    animation: none;
+  }
+  a.skip{
+    -webkit-transition: none;
+    transition: none;
+  }
+  .detail-img{
+    -webkit-transition: none;
+    transition: none;
+  }
+  .flip{
+    -webkit-transition: none;
+    transition: none;
+  }
+  .border-back{
+    transform:none;
+  }
+  .caption:focus-within .flip{
+    transform:none;
+  }
+}
+
 
 
 
