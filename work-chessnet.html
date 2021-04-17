@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="#"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work-chessnet</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <a class = "skip" href="#mn">Skip to Main Content</a>
+    <header>
+      <nav class="dropdown">
+        <div id="btn_main">
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp home</button>
+          <button class="dropbtn active"><i class='fa fa-angle-down'></i>&nbsp works</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp career</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp contact</button>
+        </div>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">home</a>
+          <a class="nav_item" href="worksmb.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav>
+      <ul id="horizontal">
+        <li class="page"><a href="index.html">Home</a></li>
+        <li class="page active"><a href="works.html">works</a></li>
+        <li class="page"><a href="career.html">career</a></li>
+        <li class="page"><a href="contact.html">contact</a></li>
+      </ul>
+      <script>
+        // From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+        var header = document.getElementById("horizontal");
+        var pages = header.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+          pages[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      </script>
+    </header>
+  <main id="mn">
+    <div id="mobile">
+      <h1 id="Chessnet">Chessnet</h1>
+      <div id="detail">
+        <div class="type">
+          Interaction Design/ Service & Product & App/ 2020
+        </div>
+        <img class="detail-img"src="img/work-chessnet/images-09.png" alt="work-chessnet0">        <!-- The Modal-->
+        <!-- The Modal-->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" alt="modal">
+          <!-- <div id="caption"></div> -->
+        </div>
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.querySelector(".detail-img");
+          var modalImg = document.getElementById("img01");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        </script>
+        <!-- The Modal-->
+
+        <div class="text">
+          Chessnet is a creative service design project aimed to solve the social problems that the migrant elderly people are facing. “The migrant elderly people” refers to a group of people who migrate to an urban area where their children are living. 
+        </div>
+        <div id="detail-img">
+          <img class="detail-img"src="img/work-chessnet/images-01.png" alt="work-chessnet01">
+          <img class="detail-img"src="img/work-chessnet/images-02.png" alt="work-chessnet02">
+          <img class="detail-img"src="img/work-chessnet/images-03.png" alt="work-chessnet03">
+          <img class="detail-img"src="img/work-chessnet/images-04.png" alt="work-chessnet04">
+          <img class="detail-img"src="img/work-chessnet/images-05.png" alt="work-chessnet05">
+          <img class="detail-img"src="img/work-chessnet/images-06.png" alt="work-chessnet06">
+          <p class="subtitle">User Journy Map</p>
+          <img class="detail-img"src="img/work-chessnet/images-07.png" alt="work-chessnet07">
+          <p class="subtitle">iBoard Function Introduction</p>
+          <img class="detail-img"src="img/work-chessnet/images-08.png" alt="work-chessnet08">
+          <img class="detail-img"src="img/work-chessnet/images-10.jpg" alt="work-chessnet10">
+          <img class="detail-img"src="img/work-chessnet/images-11.jpg" alt="work-chessnet11">
+        </div>
+      </div>
+    </div>
+    <div id="tablet">
+      <div class="detail">
+        <!-- <h1>Chessnet</h1>
+        <div class="type">
+          Interaction Design/ Service & Product & App/ 2020
+        </div> -->
+        <img class="detail-img"src="img/work-chessnet/images-09.png" alt="work-chessnet0">
+        <div class="text">
+          Chessnet is a creative service design project aimed to solve the social problems that the migrant elderly people are facing. “The migrant elderly people” refers to a group of people who migrate to an urban area where their children are living. 
+        </div>
+        <div id="detail-img tab_chess">
+          <img class="detail-img"src="img/work-chessnet/images-01.png" alt="work-chessnet01">
+          <img class="detail-img"src="img/work-chessnet/images-02.png" alt="work-chessnet02">
+          <img class="detail-img"src="img/work-chessnet/images-03.png" alt="work-chessnet03">
+          <img class="detail-img"src="img/work-chessnet/images-04.png" alt="work-chessnet04">
+          <img class="detail-img"src="img/work-chessnet/images-05.png" alt="work-chessnet05">
+          <img class="detail-img"src="img/work-chessnet/images-06.png" alt="work-chessnet06">
+          <p class="subtitle">User Journy Map</p>
+          <img class="detail-img"src="img/work-chessnet/images-07.png" alt="work-chessnet07">
+          <p class="subtitle">iBoard Function Introduction</p>
+          <img class="detail-img"src="img/work-chessnet/images-08.png" alt="work-chessnet08">
+          <img class="detail-img"src="img/work-chessnet/images-11.jpg" alt="work-chessnet11">
+          <img class="detail-img"src="img/work-chessnet/images-10.jpg" alt="work-chessnet10">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <p>
+      yanfeiz@umich.edu
+      <br>
+      &copy; Yanfei Zhao - Web Design 2021
+    </p>
+  </footer>
+  </body>
+</html>

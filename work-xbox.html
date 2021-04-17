@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/png" href="#"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work-details-xbox</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <a class = "skip" href="#mn">Skip to Main Content</a>
+    <header>
+      <nav class="dropdown">
+        <div id="btn_main">
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp home</button>
+          <button class="dropbtn active"><i class='fa fa-angle-down'></i>&nbsp works</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp career</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp contact</button>
+        </div>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">home</a>
+          <a class="nav_item" href="worksmb.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav>
+      <ul id="horizontal">
+        <li class="page"><a href="index.html">Home</a></li>
+        <li class="page active"><a href="works.html">works</a></li>
+        <li class="page"><a href="career.html">career</a></li>
+        <li class="page"><a href="contact.html">contact</a></li>
+      </ul>
+      <script>
+        // From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+        var header = document.getElementById("horizontal");
+        var pages = header.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+          pages[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      </script>
+</header>
+  <main id="mn">
+    <div id="content">
+      <h1 id="xbank">X-Bank</h1>
+      <div id="detail">
+        <div class="type">
+          Interaction Design/ Installation/ 2019
+        </div>
+        <img class="detail-img"src="img/work-xbank/images-0X1.png" alt="work-xbank01">
+        <!-- The Modal-->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" alt="modal">
+          <!-- <div id="caption"></div> -->
+        </div>
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.querySelector(".detail-img");
+          var modalImg = document.getElementById("img01");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        </script>
+        <!-- The Modal-->
+
+        <div class="text">
+          We’ve designed a platform that provides people with an opportunity to engage and understand the emotions of strangers in a subtler way. 
+        </div>
+        <div class="text">
+          A certain emotion is informationized to be recorded and stored, and then presented to the audience through videos or spacial experience. We can imagine that this is an emotion bank.
+          People can put their “emotions” into the “bank” or view other saved in the “bank”, leading to the emotional interaction among strangers. 
+        </div>
+        <div id="detail-img">
+          <img class="detail-img"src="img/work-xbank/images-02.png" alt="work-xbank02">
+          <img class="detail-img"src="img/work-xbank/images-03.png" alt="work-xbank03">
+          <img class="detail-img"src="img/work-xbank/images-04.png" alt="work-xbank04">
+          <img class="detail-img"src="img/work-xbank/images-05.png" alt="work-xbank05">
+          <img class="detail-img"src="img/work-xbank/images-06.png" alt="work-xbank06">
+          <!-- <p id="subtitle">User Journy Map</p> -->
+          <img class="detail-img"src="img/work-xbank/images-07.png" alt="work-xbank07">
+          <img class="detail-img"src="img/work-xbank/images-08.png" alt="work-xbank08">
+          <img class="detail-img"src="img/work-xbank/images-10.png" alt="work-xbank10">
+          <img class="detail-img"src="img/work-xbank/images-11.png" alt="work-xbank11">
+          <img class="detail-img"src="img/work-xbank/images-12.png" alt="work-xbank12">
+          <img class="detail-img"src="img/work-xbank/images-13.png" alt="work-xbank13">
+          <p id="subtitle 1">Design Process Video</p>
+          <video controls>
+            <source src="img/work-xbank/video.mp4" type="video/mp4">
+            <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+            Your browser does not support HTML5 video.
+            </video>
+        </div>
+      </div>
+    </div>
+    <div id="tablet">
+      <div class="detail">
+        <img class="detail-img"src="img/work-xbank/images-01.png" alt="work-xbank01">
+        <!-- <h1>X-Bank</h1>
+        <div class="type">
+          Interaction Design/ Installation/ 2019
+        </div> -->
+        <!-- The Modal-->
+        <!-- <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.querySelector(".detail-img");
+          var modalImg = document.getElementById("img01");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        </script> -->
+        <!-- The Modal-->
+
+        <div class="text">
+          <!-- We’ve designed a platform that provides people with an opportunity to engage and understand the emotions of strangers in a subtler way.  -->
+        <br>
+          A certain emotion is informationized to be recorded and stored, and then presented to the audience through videos or spacial experience. We can imagine that this is an emotion bank.
+          People can put their “emotions” into the “bank” or view other saved in the “bank”, leading to the emotional interaction among strangers. 
+        </div>
+        <div id="detail-img tablet_img">
+          <img class="detail-img"src="img/work-xbank/images-02.png" alt="work-xbank02">
+          <img class="detail-img"src="img/work-xbank/images-03.png" alt="work-xbank03">
+          <img class="detail-img"src="img/work-xbank/images-04.png" alt="work-xbank04">
+          <img class="detail-img"src="img/work-xbank/images-05.png" alt="work-xbank05">
+          <img class="detail-img"src="img/work-xbank/images-06.png" alt="work-xbank06">
+          <!-- <p id="subtitle">User Journy Map</p> -->
+          <img class="detail-img"src="img/work-xbank/images-07.png" alt="work-xbank07">
+          <img class="detail-img"src="img/work-xbank/images-08.png" alt="work-xbank08">
+          <img class="detail-img"src="img/work-xbank/images-10.png" alt="work-xbank10">
+          <img class="detail-img"src="img/work-xbank/images-11.png" alt="work-xbank11">
+          <img class="detail-img"src="img/work-xbank/images-12.png" alt="work-xbank12">
+          <img class="detail-img"src="img/work-xbank/images-13.png" alt="work-xbank13">
+          <p class="subtitle">Design Process Video</p>
+          <video controls>
+            <source src="img/work-xbank/video.mp4" type="video/mp4">
+            <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+            Your browser does not support HTML5 video.
+            </video>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <p>
+      yanfeiz@umich.edu
+      <br>
+      &copy; Yanfei Zhao - Web Design 2021
+    </p>
+  </footer>
+  </body>
+</html>

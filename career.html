@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/png" href="#"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <a class = "skip" href="#tablet">Skip to Main Content</a>
+    <header>
+      <nav class="dropdown">
+        <div id="btn_main">
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp home</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp works</button>
+          <button class="dropbtn active"><i class='fa fa-angle-down'></i>&nbsp career</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp contact</button>
+        </div>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">home</a>
+          <a class="nav_item" href="worksmb.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav>
+      <ul id="horizontal">
+        <li class="page"><a href="index.html">Home</a></li>
+        <li class="page"><a href="works.html">works</a></li>
+        <li class="page active"><a href="career.html">career</a></li>
+        <li class="page"><a href="contact.html">contact</a></li>
+      </ul>
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("horizontal");
+        var pages = header.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+          pages[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      </script>
+    </header>
+  <main id="mn">
+    <div id="mobile">
+      <div id="career">
+        <div class="bio">
+          <h1 class="title">About me</h1>
+          <br><br><br><br>
+          <img class="bio-img"src="img/portrait.png" alt="Biography">
+
+          <br><br><br>
+          <div class="bio-content">
+            I received a bachelor degree in graphic design from Harbin University of Commerce in China and a master degree in visual communication design from Tianjin Academy of Fine Arts, China. Years of professional learning experience has enabled me to accumulate a wealth of knowledge in visual expressions.        </div>
+        </div>
+        <br><br><br><br>
+        <div class="awards">
+          <div class="title">Awards</div>
+          <br><br>
+          <div class="container">
+            <div class="date1">
+              <div class="date">2018</div>
+              <div class="awards-cnt">
+                <div>
+                  Tianjin Academy of Fine Arts Department Award for Excellent Graduation Project              </div>
+                <br>
+                <div>
+                  Graphic Designer Certificate of 2017 National Games of China              </div>
+                <br>
+                <div>
+                  Tianjin Visual Research Center for large-scale sports events              </div>
+              </div>
+            </div>
+            <br><br>
+            <div class="date2">
+              <div class="date">2017</div>
+              <div class="awards-cnt">
+                <div>
+                  Excellent Work Award of The 11th Creative China Design Award              </div>
+                <br>
+                <div>
+                  Gold Prize of 2nd China & Japan Design Works Exhibition              </div>
+                <br>
+                <div>
+                  Excellent Work Award of 11th Macau Design Biennial              </div>
+              </div>
+            </div>
+            <br>
+            <div class="date3">
+              <div class="date">2016</div>
+              <div class="awards-cnt">
+                <div>
+                  Excellent Work Award of Times Young Creative Awards              </div>
+                <br>
+                <div>
+                  Filed into Asia Society of Basic Design and Art Portfolio              </div>
+                <br>
+                <div>
+                  1st Grade National Student Scholarship              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tablet">
+      <div class="career">
+        <div class="bio">
+          <div class="title-info">About me</div>
+          <br><br><br><br>
+          <div class="bio-content-img">
+            <img class="bio-img"src="img/portrait.png" alt="Biography tab">
+            <i id="icon-arrow" class='fa fa-angle-down'></i>
+            <div class="bio-content">
+              I received a bachelor degree in graphic design from Harbin University of Commerce in China and a master degree in visual communication design from Tianjin Academy of Fine Arts, China. Years of professional learning experience has enabled me to accumulate a wealth of knowledge in visual expressions.
+            </div>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="awards">
+          <div class="title">Awards</div>
+          <br><br>
+          <div class="container">
+            <div class="date1">
+              <div class="date">2018</div>
+              <div class="awards-cnt">
+                <div>
+                  Tianjin Academy of Fine Arts Department Award for Excellent Graduation Project              </div>
+                <br>
+                <div>
+                  Graphic Designer Certificate of 2017 National Games of China              </div>
+                <br>
+                <div>
+                  Tianjin Visual Research Center for large-scale sports events              </div>
+              </div>
+            </div>
+            <br><br>
+            <div class="date2">
+              <div class="date">2017</div>
+              <div class="awards-cnt">
+                <div>
+                  Excellent Work Award of The 11th Creative China Design Award              </div>
+                <br>
+                <div>
+                  Gold Prize of 2nd China & Japan Design Works Exhibition              </div>
+                <br>
+                <div>
+                  Excellent Work Award of 11th Macau Design Biennial              </div>
+              </div>
+            </div>
+            <br>
+            <div class="date3">
+              <div class="date">2016</div>
+              <div class="awards-cnt">
+                <div>
+                  Excellent Work Award of Times Young Creative Awards              </div>
+                <br>
+                <div>
+                  Filed into Asia Society of Basic Design and Art Portfolio              </div>
+                <br>
+                <div>
+                  1st Grade National Student Scholarship              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <p>
+      yanfeiz@umich.edu
+      <br>
+      &copy; Yanfei Zhao - Web Design 2021
+    </p>
+  </footer>
+  </body>
+</html>

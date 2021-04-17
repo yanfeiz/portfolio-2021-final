@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/png" href="#"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yanfei-zhao-portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@100;300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <a class = "skip" href="#mn">Skip to Main Content</a>
+    <header>
+      <nav class="dropdown">
+        <div id="arrow">
+          <div class="down"></div>
+          <div class="cut"></div>
+        </div>
+        <div id="btn_main">
+          <button class="dropbtn active" id="hidden-ct"><i class='fa fa-angle-down'></i>&nbsp home</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp works</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp career</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp contact</button>
+        </div>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">home</a>
+          <a class="nav_item" href="worksmb.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav>
+      <!-- <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("btn_main");
+      var btns = header.getElementsByClassName("dropbtn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      </script> -->
+      <ul id="horizontal">
+        <li class="page active" id="hidden-cv"><a href="index.html">Home</a></li>
+        <li class="page"><a href="works.html">works</a></li>
+        <li class="page"><a href="career.html">career</a></li>
+        <li class="page"><a href="contact.html">contact</a></li>
+      </ul>
+      <script>
+        // From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+        var header = document.getElementById("horizontal");
+        var pages = header.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+          pages[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      </script>
+    </header>
+  <main id="mn">
+    <div id="mobile">
+      <div class="bgimg-1" id="bgcv">
+        <div class="hi">
+            Hi, there <br>
+          <div class="hi-de">
+            I enjoy life as an Interaction Designer.
+          </div>
+        </div>
+        <div class="self-intro">
+            I am Yanfei Zhao, an Interaction Designer. <br>
+            I possess several years of experience in the graphic design world,
+            and now I am a Master student at the University of Michigan specializing in User Experience Design and Interaction Design.
+            <br><br><br>
+          <span id="fa-arrow">&#8595</span>
+          <i class="fa fa-instagram"></i>&nbsp<i class="fa fa-twitter-square"></i>&nbsp<i class="fa fa-facebook-square"></i>
+        </div>
+      </div>
+
+      <div id="index">
+        <div class="container">
+          <img class="detail-img"src="img/work-xbank/images-01.png" alt="work-xbank">
+          <h1 class="bottom-left-words">
+            <a href="work-xbox.html">X-Bank</a>
+          </h1>
+          <div class="bottom-right-words">
+            <pre>
+              Interaction Design
+              Installation
+              2019
+            </pre>
+          </div>
+        </div>
+        <div class="container">
+          <img class="detail-img"src="img/work-chessnet/images-01.png" alt="work-chessnet">
+          <h1 class="bottom-left-words">
+            <a href="work-chessnet.html">Chessnet</a>
+          </h1>
+          <div class="bottom-right-words">
+            <pre>
+              Interaction Design
+              Service /Product
+              2020
+            </pre>
+          </div>
+        </div>
+        <div class="container">
+          <img class="detail-img"src="img/work-taste/cover.png" alt="work-taste">
+          <h1 class="bottom-left-words">
+            <a href="work-taste-of-memories.html">Taste Of  Memories</a>
+          </h1>
+          <div class="bottom-right-words">
+            <pre>
+              Interaction Design
+              Service /App
+              2019
+            </pre>
+          </div>
+        </div>
+        <div class="container">
+          <img class="overview-img"src="img/work-pet/images-01.png" alt="work-pet">
+          <h1 class="bottom-left-words">
+            <a href="work-pet-community.html">Pet Community</a>
+          </h1>
+          <div class="bottom-right-words">
+            <pre>
+              Interaction Design
+              APP
+              2021
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tablet">
+      <div class="bgimg-1">
+        <div class="hi">
+          Hi, there <br>
+          <div class="hi-de">
+          I enjoy life as an Interaction Designer.
+          </div>
+        </div>
+        <div class="self-intro">
+          I am Yanfei Zhao, an Interaction Designer. <br>
+          I possess several years of experience in the graphic design world,
+          and now I am a Master student at the University of Michigan specializing in User Experience Design and Interaction Design.
+          <br>
+          <i class='fa fa-angle-down'></i>
+        </div>
+      </div>
+      <div class="bgimg-2">
+        <div class="caption">
+          <div class="flip">
+              <div class="border-front">
+                  <a href=work-xbox.html>View project</a>
+              </div>
+              <div class="border-back">
+                  <a href=work-xbox.html>View project</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="bgimg-3">
+        <div class="caption">
+            <div class="flip">
+                <div class="border-front">
+                    <a href="work-chessnet.html">View project</a>
+                </div>
+                <div class="border-back">
+                    <a href="work-chessnet.html">View project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-4">
+        <div class="caption">
+            <div class="flip">
+                <div class="border-front">
+                    <a href="work-taste-of-memories.html">View project</a>
+                </div>
+                <div class="border-back">
+                    <a href="work-taste-of-memories.html">View project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-5">
+        <div class="caption">
+            <div class="flip">
+                <div class="border-front">
+                    <a href="work-pet-community.html">View project</a>
+                </div>
+                <div class="border-back">
+                    <a href="work-pet-community.html">View project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <p>
+      yanfeiz@umich.edu
+      <br>
+      &copy; Yanfei Zhao - Web Design 2021
+    </p>
+  </footer>
+  </body>
+</html>

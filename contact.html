@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" type="image/png" href="#"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <a class = "skip" href="#tablet">Skip to Main Content</a>
+    <header>
+      <!-- <nav class="dropdown">
+        <botton class="dropbtn"></botton><a class="nav_main" href="">menu</a>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav> -->
+      <nav class="dropdown">
+        <div id="btn_main">
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp home</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp works</button>
+          <button class="dropbtn"><i class='fa fa-angle-down'></i>&nbsp career</button>
+          <button class="dropbtn active"><i class='fa fa-angle-down'></i>&nbsp contact</button>
+        </div>
+        <div class="dropdown-content">
+          <a class="nav_item" href="index.html">home</a>
+          <a class="nav_item" href="worksmb.html">works</a>
+          <a class="nav_item" href="career.html">career</a>
+          <a class="nav_item" href="contact.html">contact</a>
+        </div>
+      </nav>
+      <ul id="horizontal">
+        <li class="page"><a href="index.html">Home</a></li>
+        <li class="page"><a href="works.html">works</a></li>
+        <li class="page"><a href="career.html">career</a></li>
+        <li class="page active"><a href="contact.html">contact</a></li>
+      </ul>
+      <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("horizontal");
+        var pages = header.getElementsByClassName("page");
+        for (var i = 0; i < pages.length; i++) {
+          pages[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      </script>
+    </header>
+  <main id="mn">
+    <div id="mobile">
+      <div id="contact">
+        <h1 class="title-info">Get In Touch</h1>
+        <br><br><br>
+        <div class="container">
+          <div class="center-1">
+            <div>
+            Please feel free to get in touch anytime, whether for work inquiries or to just say 
+            </div>
+            <div class="changcr">
+            yanfeiz@umich.edu
+            </div>
+          </div>
+          <br>
+          <div class="center-2">
+            I am currently accepting new freelance design projects, and always excited to hear interesting proposals.
+          </div>
+          <br><br><br>
+
+          <form action="https://formspree.io/f/moqyvvje" method="POST">
+            <fieldset>
+              <div class="name">
+                <label for="fullname mb">Name:</label>
+                <input type="text" id="fullname mb" name="fullname mb" placeholder="Your name.." required>
+
+                <label for="mail mb">Email Address:</label>
+                <input type="email" id="mail mb" name="mail mb" placeholder="Your email address.." required>
+
+                <label for="massage mb">Massage:</label>
+                <textarea name="massage mb" id="massage mb" cols="30" rows="10" placeholder="Enter your massage" required></textarea>
+
+                <input type="checkbox" checked="checked" name="check mb" id="check mb">
+                <label for="check mb">Remember me <br></label>
+              </div>
+              <div class="input">
+                <input id="inputt1 mb" type="reset" value="Reset"/> &nbsp;&nbsp;&nbsp;
+                <input id="inputt2 mb" type="submit" value="Get in touch"/>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="tablet">
+      <div class="contact">
+        <div class="title-info">Get In Touch</div>
+        <br><br><br>
+        <div class="container">
+          <div class="center-1">
+            <div>
+            Please feel free to get in touch anytime, whether for work inquiries or to just say 
+            </div>
+            <div class="changcr">
+            yanfeiz@umich.edu
+            </div>
+          </div>
+          <br>
+          <div class="center-2">
+            I am currently accepting new freelance design projects, and always excited to hear interesting proposals.
+          </div>
+          <br><br><br>
+          <form action="https://formspree.io/f/moqyvvje" method="POST">
+            <fieldset>
+              <div class="name">
+                <label for="fullname tbt">Name:</label>
+                <input type="text" id="fullname tbt" name="fullname tbt" placeholder="Your name.." required>
+                <br>
+                <label for="mail tbt">Email:</label>
+                <input type="email" id="mail tbt" name="mail tbt" placeholder="Your email address.." required>
+                <br>
+                <label for="massage tbt">Massage:</label>
+                <textarea name="massage tbt" id="massage tbt" cols="30" rows="10" placeholder="Enter your massage" required></textarea>
+                <br>
+                <label for="check-tbt" id="label-check"><input type="checkbox" checked="checked" name="check-tbt" id="check-tbt">Remember me <br></label>
+              </div>
+              <div id="input">
+                <input id="inputt1-tbt" type="reset" value="Reset"/> &nbsp;&nbsp;&nbsp;
+                <input id="inputt2-tbt" type="submit" value="Get in touch"/>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <p>
+      yanfeiz@umich.edu
+      <br>
+      &copy; Yanfei Zhao - Web Design 2021
+    </p>
+  </footer>
+  </body>
+</html>
