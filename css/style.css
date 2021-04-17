@@ -1082,4 +1082,7 @@ video{
   .caption:focus-within .flip{
     transform:none;
   }
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+    background-attachment: scroll;
+  }
 }
